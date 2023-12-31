@@ -4,7 +4,7 @@
 
 A game similar to Rubiks Tower Twister.
 
-![Photo](P:\GitHub\OpenScad\Barrel-Twister\images\Photo.jpg)
+![Photo](https://github.com/Moon70/Barrel-Twister/blob/main/images/Photo.jpg?raw=true)
 
 Before downloading/printing this game, please note this is version 1 and I´m currently working on version 2. This version is playable, but the 'click mechanism' does not work properly, not like the testprint did. While this could be fixed by changing some parameters of the 'click mechanism', I want to implement some more features:
 
