@@ -28,7 +28,7 @@ However, if your printer is not the most accurate or if you use old filament, be
 
 ### Assembling is easy
 
-![Assemble](P:\GitHub\OpenScad\Barrel-Twister\images\Assemble.png)
+![Assemble](https://github.com/Moon70/Barrel-Twister/blob/main/images/Assemble.png?raw=true)
 
 Be sure to insert the tiles before mounting the second CoverRing on the last Ring. Finally, use 3 screws to fix the Cap, but don´t screw together too tightly. The screws, I think, are 3x15 mm, I used some from old VHS video tapes.
 
