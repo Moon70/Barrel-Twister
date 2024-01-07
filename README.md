@@ -18,11 +18,11 @@ However, if your printer is not the most accurate or if you use old filament, be
 
 | Model name | Image                                                        | Notes                                                        |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Shaft      | ![Shaft](P:\GitHub\OpenScad\Barrel-Twister\images\Shaft.gif) | no support, standard quality (0.2mm)                         |
-| CoverRing  | ![CoverRing](P:\GitHub\OpenScad\Barrel-Twister\images\CoverRing.gif) | no support, standard quality (0.2mm), print 2 times          |
-| Ring       | ![Ring](P:\GitHub\OpenScad\Barrel-Twister\images\Ring.gif)   | no support, standard quality (0.2mm), print 6 times          |
-| Cap        | ![Cap](P:\GitHub\OpenScad\Barrel-Twister\images\Cap.gif)     | no support, standard quality (0.2mm)                         |
-| Tile       | ![Tile](P:\GitHub\OpenScad\Barrel-Twister\images\Tile.gif)   | support, standard quality (0.2mm), use 6 colours and print 6 times each, except one colour only 5 times |
+| Shaft      | ![Shaft](https://github.com/Moon70/Barrel-Twister/blob/main/images/Shaft.gif?raw=true) | no support, standard quality (0.2mm)                         |
+| CoverRing  | ![CoverRing](https://github.com/Moon70/Barrel-Twister/blob/main/images/CoverRing.gif?raw=true) | no support, standard quality (0.2mm), print 2 times          |
+| Ring       | ![Ring](https://github.com/Moon70/Barrel-Twister/blob/main/images/Ring.gif?raw=true)   | no support, standard quality (0.2mm), print 6 times          |
+| Cap        | ![Cap](https://github.com/Moon70/Barrel-Twister/blob/main/images/Cap.gif?raw=true)     | no support, standard quality (0.2mm)                         |
+| Tile       | ![Tile](https://github.com/Moon70/Barrel-Twister/blob/main/images/Tile.gif?raw=true)   | support, standard quality (0.2mm), use 6 colours and print 6 times each, except one colour only 5 times |
 
 
 
