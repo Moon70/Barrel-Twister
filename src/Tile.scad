@@ -1,11 +1,10 @@
 include <Dimensions.scad>
 
 overlap=0.006;
-$fn=50;
 
 frontX=14;
 frontY=1.4;
-frontZ=10;
+frontZ=12;
 middleX=7;
 middleY=1.7+0.2;
 backX=12+2;
@@ -18,7 +17,9 @@ gripHeight=1;
 
 tileY=frontY+middleY+backY;
 
-tile();
+
+tileWithGrip();
+
 
 function getTileX()=frontX;
 function getTileY()=tileY;
@@ -50,7 +51,7 @@ module tileWithGrip(){
 module tile(delta=0){
     translate([0,tileY/2,0])
     rotate([0,0,180])
-    linear_extrude(height=frontZ, center=true, convexity=10, twist=0)
+    linear_extrude(height=frontZ+delta, center=true, convexity=10, twist=0)
     polygon(points=[
         [-frontX/2/7*7-delta,-delta+calcDeltaH(frontX/2/7*7)],
         [-frontX/2/7*6-delta,-delta+calcDeltaH(frontX/2/7*6)],

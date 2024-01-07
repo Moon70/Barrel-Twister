@@ -1,28 +1,50 @@
 include <Dimensions.scad>
-$fn=50;
+include <ClickringBase.scad>
+use <ScrewBracket.scad>
 
-shaft(0);
 
-module shaft(delta=0){
-    cutNotch(delta)
-    {
-        cylinder(h=shaftLength,d=shaftDiameter+delta*2,center=true);
+createShaftModel();
+
+
+module createShaftModel(){
+    translate([0,0,shaftBaseHeight/2-shaftLength/2])
+    cylinder(h=shaftBaseHeight,d=shaftBaseDiameter,center=true);
+
+    color("blue")
+    createRingModel();
+
+    for(a=[0:120:359]){
+        color("green")
+        translate([0,0,shaftLength/2-capNotchHeight])
+        rotate([0,0,a+30])
+        createScrewBracket();
     }
+
 }
 
-module cutNotch(delta=0){
-    notchHeight=3;
-    difference()
+module createRingModel(){
+    intersection()
     {
-        children();
+        difference()
+        {
+            union(){
+                createClickRingBase(delta=0,height=shaftLength);
+                for(a=[0:60:359]){
+                    rotate([0,0,a])
+                    translate([-clickRingOuterDiameter/2-notchDeltaX,0,0])
+                    cylinder(h=shaftLength,d=notchRadius+clickRingThickness*2,center=true);
+                }
+            }
 
-        translate([0,0,shaftDiameter/2+shaftLength/2-(capRingHeight-1)+delta])
-        union(){
-            translate([shaftDiameter/2+notchHeight+delta,0,0])
-            cube([shaftDiameter,shaftDiameter,shaftDiameter],center=true);
-
-            translate([-shaftDiameter/2-notchHeight-delta,0,0])
-            cube([shaftDiameter,shaftDiameter,shaftDiameter],center=true);
+            union(){
+                for(a=[0:60:359]){
+                    rotate([0,0,a])
+                    translate([-clickRingOuterDiameter/2-notchDeltaX,0,0])
+                    cylinder(h=shaftLength+overlap,d=notchRadius,center=true);
+                }
+            }
         }
+
+        cylinder(h=shaftLength,d=clickRingOuterDiameter,center=true);
     }
 }
