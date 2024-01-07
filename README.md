@@ -1,6 +1,6 @@
 # Barrel-Twister
 
-*This repository contains models that can be printed with a 3D printer. Create the .stl files with [OpenScad](https://openscad.org/).*
+*This repository contains models that can be printed with a 3D printer. Create the .stl files with [OpenScad](https://openscad.org/) or download them from [Thingiverse](https://www.thingiverse.com/thing:6421590).*
 
 A game similar to Rubiks Tower Twister.
 
